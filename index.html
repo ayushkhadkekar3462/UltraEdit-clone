@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="website icon" href="logo-ue.png" style="border-radius: 50%">
+    <title>UltraEdit</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      </style>
+    <style>
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .img1
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 2px solid rgb(50, 56, 50);
+        }
+        .img2
+        {
+            height: 35px;
+        }
+        .p1
+        {
+            font-size: 35px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 1000;
+            letter-spacing: -3px;
+            color: rgb(46, 46, 46);
+        }
+        .nav1
+        {
+            display: flex;
+            margin-left:170px ;
+            margin-top: 30px;
+            
+        }
+        .a
+        {
+            position: relative;
+            top: 37px;
+            right: 125px;
+        }
+        .nav
+        {
+            display: flex;
+            /* justify-content: end; */
+            /* border: 2px solid black; */
+            
+            
+        }
+        .list
+        {
+            display: flex;
+            /* margin-right: 100px; */
+            position: relative;
+            right: 50px;
+        }
+        .list li
+        {
+            list-style-type: none;
+            /* border: 2px solid black; */
+            margin-right: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+            
+        }
+        .nav2
+        {
+            position: relative;
+            left: 490px;
+            top: 37px;
+            /* background-color: aqua; */
+            font-size: 20px;
+        }
+        .anchor1:visited
+        {
+            color:black
+        }
+        .anchor1
+        {
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 20px;
+
+
+        }
+        .anchor1:hover
+        {
+            background-color: rgb(139, 147, 147);
+            cursor: pointer;
+        }
+        .content1
+        {
+            font-size: 50px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* border: 2px solid black; */
+            text-align: center;
+            height: 80px;
+            color: rgb(48, 47, 47);
+            margin-top: 45px;
+        }
+        .s1
+        {
+            font-weight: 800;
+            color: black;
+        }
+        .content2
+        {
+            /* border: 2px solid black; */
+            font-size: 25px;
+            height: 60px;
+            width: 920px;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .button1
+        {
+            height: 30px;
+            width: 294px;
+            /* border: 2px solid black; */
+            text-transform: uppercase;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;
+            background-color: #00b6d1;
+            color: azure;
+            padding: 10px;
+            margin-top: 25px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .button1:hover
+        {
+            background-color: #3d98a6;
+        }
+        .anchor2:visited
+        {
+            color: azure;
+        }
+        .anchor2
+        {
+            text-decoration: none;
+        }
+        .img3
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 2px solid rgb(38, 40, 38);
+        }
+        .p2
+        {
+            font-size: 25px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position: relative;
+            top: 10px;
+            left: 8px;
+            color: rgb(36, 36, 36);
+
+        }
+        .s2
+        {
+            font-size: 12px;
+            color: rgb(72, 70, 70);
+        }
+        .content3
+        {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 290px;
+            margin-top: 50px;
+        }
+        /* .timepass
+        {
+            display: flex;
+            justify-content: center;
+        } */
+        .grid
+        {
+            height: 90vh;
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: repeat(3,240px);
+            grid-template-rows: repeat(4,150px);
+            gap: 10px;
+            /* justify-items: center; */
+            /* background-color: brown; */
+            justify-content: center;
+            /* justify-items: center; */
+            /* align-items: center; */
+            margin-top: 40px;
+        }
+        .item
+        {
+            font-size: 26px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #eff4f4;
+            text-align: center;
+            position: relative;
+            /* top: 30px; */
+            padding-top: 20px;
+            font-weight: bolder;
+            color: rgb(46, 44, 44);
+            
+        }
+        .item10
+        {
+            font-size: 23px;
+        }
+        .item1
+        {
+            grid-row: 1/2;
+            grid-column: 1/2;
+            /* background-color: #3d98a6; */
+            /* justify-self: center; */
+           
+        }
+        .b32
+        {
+            position: absolute;
+            bottom: 15px;
+            left: 5px;
+            background-color:#00b6d1 ;
+        }
+        .b64
+        {
+            position: absolute;
+            bottom: 15px;
+            right: 5px;
+            width: 110px;
+            background-color:#5cb85c;
+        }
+        .b32,.b64
+        {
+            /* background-color: aqua; */
+            padding: 3px;
+            height: 33px;
+            border: none;
+            border-radius: 7px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(41, 41, 41);
+        }
+        .main
+        {
+            height: 50vh;
+            background-color: rgb(42, 39, 39);
+        }
+        .cloud
+        {
+            display: flex;
+            /* justify-content: center; */
+        }
+        .flex1a
+        {
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 28px;
+            font-weight: bolder;
+        }
+        .flex1b
+        {
+            color: white;
+            font-size: 15px;
+            width: 410px;
+            margin-top: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            text-align: center;
+            right: 12px;
+        }
+        .flex1
+        {
+            padding-left: 300px;
+            padding-top: 150px;
+        }
+        .flex2
+        {
+            height: 250px;
+            width: 330px;
+            background-color: white;
+            margin-top:60px;
+            border-radius:10px;
+            margin-left: 50px;
+
+
+        }
+        .sh1
+        {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 24px;
+            color: #03c6e4;
+            /* background-color: #5cb85c; */
+            text-align: center;
+            margin-top: 35px;
+        }
+        .sh2
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* background-color: #5cb85c; */
+            text-align: center;
+            margin-top: 17px;
+            font-size: 18px;
+        }
+        .tp
+        {
+            text-align: center;
+        }
+        .sh3
+        {
+            margin-top: 10px;
+            height: 34px;
+            width: 270px;
+            border-color: #d2e4e4;
+            border-radius: 3px;
+        }
+        .sh3::placeholder
+        {
+            text-align: center;
+            font-size:15px;
+            color: rgb(102, 93, 93);
+        }
+        .mp
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .sh4
+        {
+            text-transform:uppercase;
+            background-color: #00b6d1;
+            border: none;
+            height: 39px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;
+            width: 270px;
+            margin: 12px;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+
+        }
+        .sh4:hover
+        {
+            background-color: #3d98a6;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+    <div class="nav1">
+        <div class="logo">
+            <img class="img1" src="logo-ue.png" alt="logo">
+        </div>
+        <p class="p1">Ultra Edit</p>
+        <div class="a">An Idera,Inc.Company</div>
+    </div>
+    <div class="nav2">
+        <ul class="list">
+            <li><a class="anchor1" href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/?utm_source=CWH&utm_medium=LeadsAcquisition&utm_content=UEDownload&utm_campaign=UETrialDownload#">Products</a></li>
+            <li> <a class="anchor1" href="https://www.ultraedit.com/catalog/#ultraedit">Pricing</a></li>
+            <li><a class="anchor1" href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/?utm_source=CWH&utm_medium=LeadsAcquisition&utm_content=UEDownload&utm_campaign=UETrialDownload#">Resources</a></li>
+            <li><a class="anchor1" href="https://www.ultraedit.com/company/">About Us</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="content1">
+        Download <span class="s1">UltraEdit</span> For Windows
+        <img class="img2" src="image.png" alt="" >
+    </div>
+    <div class="container"> 
+        <div class="content2">
+        Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.
+        </div>
+    </div>
+    <div class="container">
+        <div class="button1">
+             <a  class="anchor2" href="https://www.ultraedit.com/downloads/uex-thank-you">download mac or linux version</a>
+        </div>
+    </div>
+    <div class="timepass">
+    <div class="content3">
+        <img class="img3" src="logo-ue.png" alt="">
+        <p class="p2"> Download UltraEdit
+        <span class="s2">v2023.2(released 12/15/2023) | Hotfix</span>
+        </p>
+    </div>
+    </div>
+    <div class="grid">
+        <div class="item item1">English <button class="b32" type="button">Download 32-bit</button> <button class="b64" type="button">Download 64-bit</button></div>
+        <div class="item item2">German<button class="b32" type="button">Download 32-bit</button> <button class="b64" type="button">Download 64-bit</button></div>
+        <div class="item item3">Italian<button class="b32" type="button">Download 32-bit</button> <button class="b64" type="button">Download 64-bit</button></div>
+        <div class="item item4">Spanish<button class="b32" type="button">Download 32-bit</button> <button class="b64" type="button">Download 64-bit</button></div>
+        <div class="item item5">French<button class="b32" type="button">Download 32-bit</button> <button class="b64" type="button">Download 64-bit</button></div>
+        <div class="item item6">Brazilian Portugese<button class="b32" type="button">Download 32-bit</button> <button class="b64" type="button">Download 64-bit</button></div>
+        <div class="item item7">Japanese<button class="b32" type="button">Download 32-bit</button> <button class="b64" type="button">Download 64-bit</button></div>
+        <div class="item item8">Korean<button class="b32" type="button">Download 32-bit</button> <button class="b64" type="button">Download 64-bit</button></div>
+        <div class="item item9">Chinese<button class="b32" type="button">Download 32-bit</button> <button class="b64" type="button">Download 64-bit</button></div>
+        <div class="item item10">Traditional Chinese<button class="b32" type="button">Download 32-bit</button> <button class="b64" type="button">Download 64-bit</button></div>
+    </div>
+    <div class="main">
+    <div class="cloud">
+        <div class="flex1"><div class="flex1a">Join The UltraEdit Newsletter</div><div class="flex1b">Sign up for our newsletter and receive emails for the latest news, blogs, and special deals on UltraEdit.</div></div>
+        <div class="flex2">
+            <div class="sh1">Subscribe to our emails</div>
+            <div class="sh2">Enter email address</div>
+            <div class="tp"><input class="sh3" type="text" name="email" placeholder="Enter email id"></div>
+            <div class="mp"><button class="sh4">sign up</button></div>
+        </div>
+    </div>
+    <div class="cloud2">
+
+    </div>
+    </div>
+    
+   
+    
+</body>
+</html>
